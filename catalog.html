@@ -1,109 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Каталог | Интернет-магазин «Девайс»</title>
+	<meta charset="utf-8">
+	<title>Каталог | Интернет-магазин «Девайс»</title>
   </head>
   <body>
 
-    <header class="main-header">
-    	<a class="logo-header" href="index.html">
-    		<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
-    	</a>
-    	<ul class="user-navigation">
-    		<li>
-    			<a href="#">Валентин Петухов</a>
-    			<a href="#">Выйти</a>
-    		</li>
-    		<li><a href="#">Сравнить</a></li>
-    		<li><a href="#">Корзина</a></li>
-    	</ul>
-    	<nav class="main-navigation">
-    		<ul class="site-navigation">
-    			<li>Каталог товаров</li>
-    			<li><a href="#">Доставка</a></li>
-    			<li><a href="#">Гарантия</a></li>
-    			<li><a href="#">Контакты</a></li>
-    		</ul>
-    	</nav>
-    </header>
-
-    <main class="container">
-    	<h1 class="page-title">Моноподы для селфи</h1>
-    	<ul class="breadcrumbs">
-    		<li><a href="index.html">Главная</a></li>
-    		<li><a href="#">Каталог товаров</a></li>
-    		<li class="breadcrumbs-current">Моноподы для селфи</li>
-    	</ul>
-    	<section class="filter">
-    		<!-- Блок выделен красным. Сверстаем позже. -->
-    		<p class="color">Цвет</p>
-    		<!-- Здесь будут формы -->
-    		<p class="color">Bluetooth</p>
-    		<!-- Здесь будут формы -->
-    		<button class="button button-show-filter"></button>
-    	</section>
-    	<section class="catalog-items">
-    		<ul class="catalog-list">
-    			<li>
-    				<img src="img/item-1.jpg" alt="Картинка товара" width="360" height="380">
-    				<p class="catalog-details">
-    					<a href="#">Любительская селфи-палка</a>
-    					<span>500 руб.</span>
-					</p>
-    			</li>
-    			<li>
-    				<img src="img/item-2.jpg" alt="Картинка товара" width="360" height="380">
-    				<p class="catalog-details">
-    					<a href="#">Профессиональная селфи-палка</a>
-    					<span>1 500 руб.</span>
-					</p>
-    			</li>
-    			<li>
-    				<img src="img/item-3.jpg" alt="Картинка товара" width="360" height="380">
-    				<p class="catalog-details">
-    					<a href="#">Непотопляемая селфи-палка</a>
-    					<span>2 500 руб.</span>
-					</p>
-    			</li>
-    			<li>
-    				<img src="img/item-4.jpg" alt="Картинка товара" width="360" height="380">
-    				<p class="catalog-details">
-    					<a href="#">Селфи-палка «Следуй за мной»</a>
-    					<span>4 900 руб.</span>
-					</p>
-    			</li>
-    		</ul>
-    	</section>
-
-    </main>
-
-        <footer class="main-footer">
-        	<a class="logo-footer" href="index.html">
-        		<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
-        	</a>
-    		<address>г. Москва, ул. Строителей, 15</address>
-    		<ul class="navigation-footer">
-    			<li><a href="#">Доставка</a></li>
-    			<li><a href="#">Гарантия</a></li>
-    			<li><a href="#">Контакты</a></li>
-    		</ul>
-			<ul class="social-footer">
-		        <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
-		        <li><a class="social-button social-button-instagram" href="#">Вконтакте</a></li>
-		        <li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
+	<header class="main-header">
+		<a class="logo-header" href="index.html" title="Интернет-магазин «Девайс»">
+			<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
+		</a>
+		<ul class="user-navigation">
+			<li>
+				<a href="#">Валентин Петухов</a>
+				<a href="#">Выйти</a>
+			</li>
+			<li><a href="#">Сравнить</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li>
+					<a class="catalog" href="#">Каталог товаров</a>
+					<ul class="catalog-hidden">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
-        	<ul class="user-navigation-footer">
-        		<li>
-        			<a href="#">Валентин Петухов</a>
-        			<a href="#">Выйти</a>
-        		</li>
-        		<li><a href="#">Сравнить</a></li>
-        		<li><a href="#">Корзина</a></li>
-        	</ul>
-        	<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-        	<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-        </footer>
+		</nav>
+	</header>
+
+	<main class="container">
+		<h1 class="page-title">Моноподы для селфи</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="#">Каталог товаров</a></li>
+			<li class="breadcrumbs-current">Моноподы для селфи</li>
+		</ul>
+		<section class="filter">
+			<h2 class="visually-hidden">Фильтрация</h2>
+			<!-- Блок выделен красным. Сверстаем позже. -->
+
+			<fieldset class="filter-color">
+				<legend>Цвет</legend>
+				<ul>
+					<li>
+						<input class="visually-hidden" name="black" id="black-color" checked type="checkbox">
+						<label for="black-color">Черный</label>
+					</li>
+					<li>
+						<input class="visually-hidden" name="white" id="white-color" type="checkbox">
+						<label for="white-color">Белый</label>
+					</li>
+					<li>
+						<input class="visually-hidden" name="blue" id="blue-color" checked type="checkbox">
+						<label for="blue-color">Синий</label>
+					</li>
+					<li>
+						<input class="visually-hidden" name="red" id="red-color" checked type="checkbox">
+						<label for="red-color">Красный</label>
+					</li>
+					<li>
+						<input class="visually-hidden" name="pink" id="pink-color" type="checkbox">
+						<label for="pink-color">Розовый</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="filter-bluetooth">
+				<legend>Bluetooth</legend>
+				<ul>
+					<li>
+						<input class="visually-hidden" name="bluetooth" id="bluetooth-true" type="radio" checked>
+						<label for="bluetooth-true">Есть</label>
+					</li>
+					<li>
+						<input class="visually-hidden" name="bluetooth" id="bluetooth-false" type="radio">
+						<label for="bluetooth-false">Нет</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="button button-show-filter" type="button">Показать</button>
+		</section>
+		<section class="catalog-items">
+			<h2 class="visually-hidden">Список товаров</h2>
+			<ul class="catalog-list">
+				<li>
+					<img src="img/item-1.jpg" alt="Картинка товара" width="360" height="380">
+					<p class="catalog-details">
+						<a href="#">Любительская селфи-палка</a>
+						<span>500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<img src="img/item-2.jpg" alt="Картинка товара" width="360" height="380">
+					<p class="catalog-details">
+						<a href="#">Профессиональная селфи-палка</a>
+						<span>1 500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<img src="img/item-3.jpg" alt="Картинка товара" width="360" height="380">
+					<p class="catalog-details">
+						<a href="#">Непотопляемая селфи-палка</a>
+						<span>2 500 руб.</span>
+					</p>
+				</li>
+				<li>
+					<img src="img/item-4.jpg" alt="Картинка товара" width="360" height="380">
+					<p class="catalog-details">
+						<a href="#">Селфи-палка «Следуй за мной»</a>
+						<span>4 900 руб.</span>
+					</p>
+				</li>
+			</ul>
+		</section>
+
+	</main>
+
+	<footer class="main-footer">
+		<a class="logo-footer" href="index.html" title="Интернет-магазин «Девайс»">
+			<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
+		</a>
+		<address>г. Москва, ул. Строителей, 15</address>
+		<ul class="navigation-footer">
+			<li><a href="#">Доставка</a></li>
+			<li><a href="#">Гарантия</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<ul class="social-footer">
+			<li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
+			<li><a class="social-button social-button-instagram" href="#">Вконтакте</a></li>
+			<li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
+		</ul>
+		<ul class="user-navigation-footer">
+			<li>
+				<a href="#">Валентин Петухов</a>
+				<a href="#">Выйти</a>
+			</li>
+			<li><a href="#">Сравнить</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+		<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+		<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy"></a>
+	</footer>
 
   </body>
 </html>

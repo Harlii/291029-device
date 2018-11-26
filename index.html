@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>Интернет-магазин «Девайс»</title>
+	<meta charset="utf-8">
+	<title>Интернет-магазин «Девайс»</title>
   </head>
   <body>
 
-    <header class="main-header">
-    	<a class="logo-header">
-    		<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
-    	</a>
-    	<ul class="user-navigation">
-    		<li><a href="#">Войти</a></li>
-    		<li><a href="#">Сравнить</a></li>
-    		<li><a href="#">Корзина</a></li>
-    	</ul>
-    	<nav class="main-navigation">
-    		<ul class="site-navigation">
-    			<li>Каталог товаров</li>
-    			<li><a href="#">Доставка</a></li>
-    			<li><a href="#">Гарантия</a></li>
-    			<li><a href="#">Контакты</a></li>
-    		</ul>
-    	</nav>
-    </header>
+	<header class="main-header">
+		<a class="logo-header" title="Интернет-магазин «Девайс»">
+			<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
+		</a>
+		<ul class="user-navigation">
+			<li><a href="#">Войти</a></li>
+			<li><a href="#">Сравнить</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+		<nav class="main-navigation">
+			<ul class="site-navigation">
+				<li>
+					<a class="catalog" href="#">Каталог товаров</a>
+					<ul class="catalog-hidden">
+						<li><a href="#">Виртуальная реальность</a></li>
+						<li><a href="#">Моноподы для селфи</a></li>
+						<li><a href="#">Экшн-камеры</a></li>
+						<li><a href="#">Фитнес-браслеты</a></li>
+						<li><a href="#">Умные часы</a></li>
+						<li><a href="#">Квадрокоптеры</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main class="container">
+	<main class="container">
 		<h1 class="visually-hidden">Интернет магазин «Девайс»</h1>
 		<!-- Блок выделен красным. Сверстаем позже. -->
 		<section class="information-us">
+			<h2 class="visually-hidden">Информация о нас</h2>
 			<section class="about-us">
+				<h2>О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со ногими транспортными компаниями:</p>
 				<ul class="about-us-list">
@@ -40,6 +52,7 @@
 				<a class="button button-yellow button-more-us" href="#">Подробнее о нас</a>
 			</section>
 			<section class="contacts">
+				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы можете проверить работоспособность покупки. Всякое бывает.</p>
 				<a class="map-contacts" href="#">
 					<img src="img/map.jpg" alt="Фотография адреса на карте" width="560" height="222">
@@ -47,12 +60,12 @@
 				<a class="button button-yellow button-write-us" href="#">Напишите нам</a>
 			</section>
 		</section>
-    </main>
+	</main>
 
-    <footer class="main-footer">
-    	<a class="logo-footer">
-    		<img src="https://placehold.it/100x40" alt="Логотип магазина «Девайс»" width="100" height="40">
-    	</a>
+	<footer class="main-footer">
+		<a class="logo-footer" title="Интернет-магазин «Девайс»">
+			<img src="https://placehold.it/100x40" alt="Офис компании по адресу ул. Строителей 15, Москва" width="100" height="40">
+		</a>
 		<address>г. Москва, ул. Строителей, 15</address>
 		<ul class="navigation-footer">
 			<li><a href="#">Доставка</a></li>
@@ -60,18 +73,38 @@
 			<li><a href="#">Контакты</a></li>
 		</ul>
 		<ul class="social-footer">
-	        <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
-	        <li><a class="social-button social-button-instagram" href="#">Вконтакте</a></li>
-	        <li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
+			<li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
+			<li><a class="social-button social-button-instagram" href="#">Вконтакте</a></li>
+			<li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
 		</ul>
-    	<ul class="user-navigation-footer">
-    		<li><a href="#">Войти</a></li>
-    		<li><a href="#">Сравнить</a></li>
-    		<li><a href="#">Корзина</a></li>
-    	</ul>
-    	<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-    	<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-    </footer>
+		<ul class="user-navigation-footer">
+			<li><a href="#">Войти</a></li>
+			<li><a href="#">Сравнить</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
+		<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+		<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+	</footer>
+
+	<section class="modal modal-write-us">
+		<h2 class="visually-hidden">Форма обратной связи</h2>
+		<form class="form-write-us" action="https://echo.htmlacademy.ru" method="post" >
+			<p class="name-info">
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" id="user-name" name="name" placeholder="Имя Фамилия" required>
+			</p>
+			<p class="email-info">
+				<label for="user-email">Ваш e-mail:</label>
+				<input type="email" id="user-email" name="email" placeholder="e-mail@example.com" required>
+			</p>
+			<p class="text-info">
+				<label for="user-text">Текст письма:</label>
+				<textarea id="user-text" name="text" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="button button-yellow button-write-us" type="submit">Отправить</button>
+			<button class="modal-close" aria-label="Закрыть форму обратной связи" type="button"></button>
+		</form>
+	</section>
 
   </body>
 </html>
