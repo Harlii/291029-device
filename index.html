@@ -3,14 +3,19 @@
   <head>
 	<meta charset="utf-8">
 	<title>Интернет-магазин «Девайс»</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 	<header class="main-header">
-		<a class="logo-header" title="Интернет-магазин «Девайс»">
-			<img src="img/ФБ.svg" alt="Логотип магазина «Девайс»" width="100" height="40">
-		</a>
+		<a class="logo-header" title="Интернет-магазин «Девайс»" aria-label="Логотип магазина «Девайс»">Device</a>
 		<ul class="user-navigation">
+			<li>
+				<input class="user-search" type="text" placeholder="Поиск по сайту" aria-label="Поиск в «Девайс»">
+				<button class="button button-search" type="button">Найти</button>
+			</li>
 			<li><a href="#">Войти</a></li>
 			<li><a href="#">Сравнить</a></li>
 			<li><a href="#">Корзина</a></li>
@@ -45,9 +50,10 @@
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со ногими транспортными компаниями:</p>
 				<ul class="about-us-list">
-					<li><a href="#">Деловые Линии</a></li>
-					<li><a href="#">Автотрейдинг</a></li>
-					<li><a href="#">ЖелДорЭкспедиция</a></li>
+					<!-- Мне показалось, что следует названия компаний обернуть в ссылки, дабы при клике сразу можно было перейти на них. -->
+					<li><a href="#" target="_blank">Деловые Линии</a></li>
+					<li><a href="#" target="_blank">Автотрейдинг</a></li>
+					<li><a href="#" target="_blank">ЖелДорЭкспедиция</a></li>
 				</ul>
 				<a class="button button-yellow button-more-us" href="#">Подробнее о нас</a>
 			</section>
@@ -55,7 +61,7 @@
 				<h2>Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы можете проверить работоспособность покупки. Всякое бывает.</p>
 				<a class="map-contacts" href="#">
-					<img src="img/map.jpg" alt="Фотография адреса на карте" width="560" height="222">
+					<img src="img/map.jpg" alt="Офис компании по адресу ул. Строителей 15, Москва" width="560" height="222">
 				</a>
 				<a class="button button-yellow button-write-us" href="#">Напишите нам</a>
 			</section>
@@ -63,9 +69,7 @@
 	</main>
 
 	<footer class="main-footer">
-		<a class="logo-footer" title="Интернет-магазин «Девайс»">
-			<img src="https://placehold.it/100x40" alt="Офис компании по адресу ул. Строителей 15, Москва" width="100" height="40">
-		</a>
+		<a class="logo-footer" title="Интернет-магазин «Девайс»" aria-label="Логотип магазина «Девайс»">Device</a>
 		<address>г. Москва, ул. Строителей, 15</address>
 		<ul class="navigation-footer">
 			<li><a href="#">Доставка</a></li>
@@ -73,9 +77,9 @@
 			<li><a href="#">Контакты</a></li>
 		</ul>
 		<ul class="social-footer">
-			<li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
-			<li><a class="social-button social-button-instagram" href="#">Вконтакте</a></li>
-			<li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
+			<li><a class="social-button social-button-facebook" href="#" target="_blank">Фейсбук</a></li>
+			<li><a class="social-button social-button-instagram" href="#" target="_blank">Вконтакте</a></li>
+			<li><a class="social-button social-button-twitter" href="#" target="_blank">Твиттер</a></li>
 		</ul>
 		<ul class="user-navigation-footer">
 			<li><a href="#">Войти</a></li>
@@ -83,7 +87,7 @@
 			<li><a href="#">Корзина</a></li>
 		</ul>
 		<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-		<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+		<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy" target="_blank"></a>
 	</footer>
 
 	<section class="modal modal-write-us">
