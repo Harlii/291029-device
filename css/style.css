@@ -32,10 +32,6 @@ a {
 	text-decoration: none;
 }
 
-ul {
-	list-style: none; ``````````````````````````````````````````````````````
-}
-
 /*----------Header------------------------------*/
 
 .logo-header {
@@ -53,6 +49,12 @@ ul {
 
 .logo-header:focus {
 	color: rgba(0, 0, 0, .3);
+}
+
+.user-navigation,
+.site-navigation,
+.catalog-hidden {
+	list-style: none;
 }
 
 .user-navigation {
@@ -218,6 +220,18 @@ ul {
 
 /*----------Main------------------------------*/
 
+.page-title {
+	font-size: 47px;
+	line-height: 48px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.17px;
+	color: #000000;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
 .breadcrumbs {
 	font-size: 14px;
 	line-height: 24px;
@@ -243,6 +257,10 @@ ul {
 }
 
 .about-us-list {
+	list-style: none;
+}
+
+.about-us-list {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 40px;
@@ -260,6 +278,48 @@ ul {
 
 .about-us-list a:focus {
 	color: rgba(0, 0, 0, .3);
+}
+
+.filter-color ul,
+.filter-bluetooth ul {
+	list-style: none;
+}
+
+.filter-color legend,
+.filter-bluetooth legend {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.filter-color label,
+.filter-bluetooth label {
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-details a {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.catalog-details span {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Light", "Arial", sans-serif;
+	letter-spacing: 0.16px;
+	color: #464646;
 }
 
 /*----------Footer------------------------------*/
@@ -286,7 +346,14 @@ ul {
 }
 
 address {
+	font-style: normal;
 	color: #ffffff;
+}
+
+.navigation-footer,
+.social-footer,
+.user-navigation-footer {
+	list-style: none;
 }
 
 .navigation-footer {
@@ -356,6 +423,7 @@ address {
 .form-write-us input,
 .form-write-us textarea {
 	font: inherit;
+	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 	color: rgba(70, 70, 70, 1);
@@ -366,21 +434,25 @@ address {
 
 .form-write-us input::-webkit-input-placeholder,
 .form-write-us textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(70, 70, 70, .4);
+	font-weight: 400;
+	color: rgba(70, 70, 70, .4);
 }
 
 .form-write-us input::-moz-placeholder,
 .form-write-us textarea::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(70, 70, 70, .4);
+	font-weight: 400;
+	color: rgba(70, 70, 70, .4);
 }
 
 .form-write-us input:-ms-input-placeholder,
 .form-write-us textarea:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(70, 70, 70, .4);
+	font-weight: 400;
+	color: rgba(70, 70, 70, .4);
 }
 
 .form-write-us input:-moz-placeholder,
 .form-write-us textarea:-moz-placeholder { /* Firefox 18- */
-  color: rgba(70, 70, 70, .4);
+	font-weight: 400;
+	color: rgba(70, 70, 70, .4);
 }
 
