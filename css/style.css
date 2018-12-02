@@ -34,7 +34,8 @@ a {
 
 /*----------Header------------------------------*/
 
-.logo-header {
+.logo-header,
+.inner-logo-header {
 	font-size: 48px;
 	line-height: 48px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
@@ -43,11 +44,11 @@ a {
 	color: #000000;
 }
 
-.logo-header:hover {
+.inner-logo-header:hover {
 	color: rgba(0, 0, 0, .6);
 }
 
-.logo-header:focus {
+.inner-logo-header:focus {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -229,14 +230,16 @@ a {
 }
 
 .breadcrumbs {
-	list-style: none;
-}
-
-.breadcrumbs {
 	font-size: 14px;
 	line-height: 24px;
 	font-family: "Open Sans", "Arial", sans-serif;
 	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, .3);
+
+	list-style: none;
+}
+
+.breadcrumbs a {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -324,7 +327,8 @@ a {
 
 /*----------Footer------------------------------*/
 
-.logo-footer {
+.logo-footer,
+.inner-logo-footer {
 	font-size: 48px;
 	line-height: 48px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
@@ -333,11 +337,11 @@ a {
 	color: #ffc600;
 }
 
-.logo-footer:hover {
+.inner-logo-footer:hover {
 	color: rgba(255, 198, 0, .6);
 }
 
-.logo-footer:focus {
+.inner-logo-footer:focus {
 	color: rgba(255, 198, 0, .3);
 }
 
