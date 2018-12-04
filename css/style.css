@@ -174,11 +174,34 @@ a {
 	margin-right: 40px;
 }
 
+.form-search {
+	position: relative;
+
+	display: flex;
+}
+
+.form-search::before {
+	content: "";
+
+	position: absolute;
+	top: 10px;
+
+	width: 16px;
+	height: 16px;
+
+	background-image: url("../img/icon-search.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 .user-search {
+	padding-left: 30px;
+
 	font: inherit;
 	color: rgba(70, 70, 70, 1);
 
 	border: none;
+	border-bottom: 2px solid #f8e296;
 	background-color: transparent;
 }
 
@@ -214,6 +237,35 @@ a {
   color: rgba(70, 70, 70, .6);
 }
 
+.button-search {
+	display: none;
+
+	color: #000000;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.button-search:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.button-search:focus {
+	color: rgba(255, 255, 255, .3);
+
+	background-color: #000000;
+}
+
+.user-search:focus {
+	border-bottom: 2px solid #000000;
+}
+
+.form-search:focus .button-search {
+	display: block;
+}
+
 .user-navigation .log-out-header {
 	color: rgba(0, 0, 0, .3);
 }
@@ -242,25 +294,6 @@ a {
 
 .button-yellow:focus {
 	color: rgba(0, 0, 0, .3);
-}
-
-.button-search {
-	color: #000000;
-
-	background-color: transparent;
-	border: 2px solid #000000;
-}
-
-.button-search:hover {
-	color: #ffffff;
-
-	background-color: #000000;
-}
-
-.button-search:focus {
-	color: rgba(255, 255, 255, .3);
-
-	background-color: #000000;
 }
 
 .site-navigation {
@@ -565,13 +598,69 @@ address {
 }
 
 .social-line-footer {
+	position: relative;
+
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.social-line-footer::before {
+	content: "";
+
+	width: 80px;
+	height: 7px;
+
+	background-color: #ffc600;
 }
 
 .social-footer {
+	display: flex;
 	margin: 0;
 	padding: 0;
 
 	list-style: none;
+}
+
+.social-button {
+	display: block;
+	width: 32px;
+	height: 32px;
+
+	border-radius: 50%;
+	opacity: .3;
+}
+
+.social-button-facebook {
+	margin-right: 23px;
+
+	background-image: url(../img/icon-facebook.svg);
+}
+
+.social-button-instagram {
+	margin-right: 23px;
+
+	background-image: url(../img/icon-instagram.svg);
+}
+
+.social-button-twitter {
+	background-image: url(../img/icon-twitter.svg);
+}
+
+.social-button:hover {
+	opacity: .6;
+}
+
+.social-button:focus {
+	opacity: .1;
+}
+
+.developed-by {
+	display: block;
+	width: 27px;
+	height: 35px;
+
+	background-image: url(../img/icon-logo-html.svg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
