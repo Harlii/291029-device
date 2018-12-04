@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
 	<meta charset="utf-8">
 	<title>Интернет-магазин «Девайс»</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+</head>
+<body>
 
-	<header class="main-header">
-		<a class="logo-header">Device</a>
-		<ul class="user-navigation">
-			<li>
-				<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-					<input class="user-search" type="text" placeholder="Поиск по сайту">
-					<button class="button button-search" type="button">Найти</button>
-				</form>
-			</li>
-			<li><a href="#">Войти</a></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
-		</ul>
-		<nav class="main-navigation">
-			<ul class="site-navigation">
+	<header class="main-header container">
+		<div class="wrapper">
+			<a class="logo-header">Device</a>
+			<ul class="user-navigation">
 				<li>
-					<a class="catalog" href="#">Каталог товаров</a>
-					<ul class="catalog-hidden">
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="inner.html">Моноподы для селфи</a></li>
-						<li><a href="#">Экшн-камеры</a></li>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Квадрокоптеры</a></li>
-					</ul>
+					<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+						<input class="user-search" type="text" placeholder="Поиск по сайту">
+						<button class="button button-search" type="button">Найти</button>
+					</form>
 				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Войти</a></li>
+				<li><a href="#">Сравнить</a></li>
+				<li><a href="#">Корзина</a></li>
 			</ul>
-		</nav>
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li>
+						<a class="catalog" href="#">Каталог товаров</a>
+						<ul class="catalog-hidden">
+							<li><a href="#">Виртуальная реальность</a></li>
+							<li><a href="inner.html">Моноподы для селфи</a></li>
+							<li><a href="#">Экшн-камеры</a></li>
+							<li><a href="#">Фитнес-браслеты</a></li>
+							<li><a href="#">Умные часы</a></li>
+							<li><a href="#">Квадрокоптеры</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 
 	<main class="container">
@@ -71,25 +73,33 @@
 	</main>
 
 	<footer class="main-footer">
-		<a class="logo-footer" title="Интернет-магазин «Девайс»" aria-label="Логотип магазина «Девайс»">Device</a>
-		<address>г. Москва, ул. Строителей, 15</address>
-		<ul class="navigation-footer">
-			<li><a href="#">Доставка</a></li>
-			<li><a href="#">Гарантия</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-		<ul class="social-footer">
-			<li><a class="social-button social-button-facebook" href="#" target="_blank">Фейсбук</a></li>
-			<li><a class="social-button social-button-instagram" href="#" target="_blank">Инстаграмм</a></li>
-			<li><a class="social-button social-button-twitter" href="#" target="_blank">Твиттер</a></li>
-		</ul>
-		<ul class="user-navigation-footer">
-			<li><a href="#">Войти</a></li>
-			<li><a href="#">Сравнить</a></li>
-			<li><a href="#">Корзина</a></li>
-		</ul>
-		<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-		<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy" target="_blank"></a>
+		<div class="container">
+			<div class="user-line-footer">
+				<a class="logo-footer" title="Интернет-магазин «Девайс»" aria-label="Логотип магазина «Девайс»">Device</a>
+				<ul class="user-navigation-footer">
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>
+			</div>
+			<div class="navigation-line-footer">
+				<address>г. Москва, ул. Строителей, 15</address>
+				<ul class="navigation-footer">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a class="phone" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+			</div>
+			<div class="social-line-footer">
+				<ul class="social-footer">
+					<li><a class="social-button social-button-facebook" href="#" target="_blank" aria-label="Фейсбук"></a></li>
+					<li><a class="social-button social-button-instagram" href="#" target="_blank" aria-label="Инстаграмм"></a></li>
+					<li><a class="social-button social-button-twitter" href="#" target="_blank" aria-label="Твиттер"></a></li>
+				</ul>
+				<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy" target="_blank"></a>
+			</div>
+		</div>
 	</footer>
 
 	<section class="modal modal-write-us">
@@ -112,5 +122,5 @@
 		</form>
 	</section>
 
-  </body>
+</body>
 </html>

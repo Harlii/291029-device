@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Gilroy Extra Bold';
-    src: url('../font/gilroyextrabold-webfont.woff2') format('woff2'),
-         url('../font/gilroyextrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Gilroy Extra Bold";
+	src: url("../font/gilroyextrabold-webfont.woff2") format("woff2"),
+		 url("../font/gilroyextrabold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy Light';
-    src: url('../font/gilroylight-webfont.woff2') format('woff2'),
-         url('../font/gilroylight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "Gilroy Light";
+	src: url("../font/gilroylight-webfont.woff2") format("woff2"),
+		 url("../font/gilroylight-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -34,117 +34,15 @@ a {
 
 .visually-hidden {
 	position: absolute;
+
 	width: 1px;
 	height: 1px;
 	margin: -1px;
-	border: 0;
 	padding: 0;
+
+	border: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
-
-/*----------Header------------------------------*/
-
-.logo-header,
-.inner-logo-header {
-	font-size: 48px;
-	line-height: 48px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.48px;
-	text-transform: uppercase;
-	color: #000000;
-}
-
-.inner-logo-header:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.inner-logo-header:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-.user-navigation,
-.site-navigation,
-.catalog-hidden {
-	list-style: none;
-}
-
-.user-navigation {
-	color: #000000;
-}
-
-.user-navigation a {
-	color: #000000;
-}
-
-.user-navigation a:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.user-navigation a:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-.search-text {
-	color: rgba(0, 0, 0, .3);
-}
-
-.search-text:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.user-search {
-	font: inherit;
-	color: rgba(70, 70, 70, 1);
-
-	border: none;
-	background-color: transparent;
-}
-
-.user-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(70, 70, 70, .3);
-}
-
-.user-search::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(70, 70, 70, .3);
-}
-
-.user-search:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(70, 70, 70, .3);
-}
-
-.user-search:-moz-placeholder { /* Firefox 18- */
-  color: rgba(70, 70, 70, .3);
-}
-
-.user-search:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(70, 70, 70, .6);
-}
-
-.user-search:hover::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(70, 70, 70, .6);
-}
-
-.user-search:hover:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(70, 70, 70, .6);
-}
-
-.user-search:hover:-moz-placeholder { /* Firefox 18- */
-  color: rgba(70, 70, 70, .6);
-}
-
-.user-navigation .log-out-header {
-	color: rgba(0, 0, 0, .3);
-}
-
-/*	В стайл-гайде небыло описания взаимодействия с этой кнопкой. Поговорил с дизайнером.	*/
-
-.user-navigation .log-out-header:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.user-navigation .log-out-header:focus {
-	color: rgba(0, 0, 0, .1);
 }
 
 .button {
@@ -153,277 +51,10 @@ a {
 	border: none;
 }
 
-.button-yellow {
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	color: #000000;
-	letter-spacing: 2.15px;
-	text-transform: uppercase;
-
-	background-color: transparent;
-}
-
-.button-yellow:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-.button-search {
-	color: #000000;
-
-	background-color: transparent;
-	border: 2px solid #000000;
-}
-
-.button-search:hover {
-	color: #ffffff;
-
-	background-color: #000000;
-}
-
-.button-search:focus {
-	color: rgba(255, 255, 255, .3);
-
-	background-color: #000000;
-}
-
-.site-navigation {
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 3.6px;
-	text-transform: uppercase;
-	color: #000000;
-}
-
-.site-navigation a {
-	color: #000000;
-}
-
-.site-navigation a:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.site-navigation a:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-.catalog-hidden {
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 36px;
-	font-family: "Open Sans", "Arial", sans-serif;
-	text-transform: none;
-	letter-spacing: 0.15px;
-	color: #000000;
-}
-
-.catalog-hidden a {
-	color: #000000;
-}
-
-.catalog-hidden a:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.catalog-hidden a:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-/*----------Main------------------------------*/
-
-.page-title {
-	font-size: 47px;
-	line-height: 48px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.17px;
-	color: #000000;
-}
-
-.breadcrumbs {
-	font-size: 14px;
-	line-height: 24px;
-	font-family: "Open Sans", "Arial", sans-serif;
-	letter-spacing: 0.14px;
-	color: rgba(0, 0, 0, .3);
-
-	list-style: none;
-}
-
-.breadcrumbs a {
-	color: rgba(0, 0, 0, .3);
-}
-
-.breadcrumbs a:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.breadcrumbs a:focus {
-	color: rgba(0, 0, 0, .1);
-}
-
-.information-us h2 {
-	font-size: 47px;
-	line-height: 48px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.21px;
-	color: #000000;
-}
-
-.about-us-list {
-	list-style: none;
-}
-
-.about-us-list {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 40px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	color: #000000;
-}
-
-.about-us-list a {
-	color: #000000;
-}
-
-.about-us-list a:hover {
-	color: rgba(0, 0, 0, .6);
-}
-
-.about-us-list a:focus {
-	color: rgba(0, 0, 0, .3);
-}
-
-.filter-color ul,
-.filter-bluetooth ul {
-	list-style: none;
-}
-
-.filter-color legend,
-.filter-bluetooth legend {
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.18px;
-	color: #000000;
-}
-
-.filter-color label,
-.filter-bluetooth label {
-	font-size: 14px;
-	line-height: 40px;
-	letter-spacing: 0.18px;
-	color: #000000;
-}
-
-.catalog-list {
-	list-style: none;
-}
-
-.catalog-details a {
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.18px;
-	color: #000000;
-}
-
-.catalog-details span {
-	font-size: 16px;
-	line-height: 24px;
-	font-family: "Gilroy Light", "Arial", sans-serif;
-	letter-spacing: 0.16px;
-	color: #464646;
-}
-
-/*----------Footer------------------------------*/
-
-.logo-footer,
-.inner-logo-footer {
-	font-size: 48px;
-	line-height: 48px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.48px;
-	text-transform: uppercase;
-	color: #ffc600;
-}
-
-.inner-logo-footer:hover {
-	color: rgba(255, 198, 0, .6);
-}
-
-.inner-logo-footer:focus {
-	color: rgba(255, 198, 0, .3);
-}
-
-.main-footer {
-	background-color: #464646;
-}
-
-address {
-	font-style: normal;
-	color: #ffffff;
-}
-
-.navigation-footer,
-.social-footer,
-.user-navigation-footer {
-	list-style: none;
-}
-
-.navigation-footer {
-	font-size: 18px;
-	line-height: 24px;
-	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 3.6px;
-	text-transform: uppercase;
-	color: #ffffff;
-}
-
-.navigation-footer a {
-	color: #ffffff;
-}
-
-.navigation-footer a:hover {
-	color: rgba(255, 255, 255, .6);
-}
-
-.navigation-footer a:focus {
-	color: rgba(255, 255, 255, .3);
-}
-
-.user-navigation-footer {
-	color: rgba(255, 255, 255, .7);
-}
-
-.user-navigation-footer a {
-	color: rgba(255, 255, 255, .7);
-}
-
-.user-navigation-footer a:hover {
-	color: rgba(255, 255, 255, 1);
-}
-
-.user-navigation-footer a:focus {
-	color: rgba(255, 255, 255, .3);
-}
-
-.user-navigation-footer .log-out-footer {
-	color: rgba(255, 255, 255, .3);
-}
-
-/*	В стайл-гайде небыло описания взаимодействия с этой кнопкой. Поговорил с дизайнером.	*/
-
-.user-navigation-footer .log-out-footer:hover {
-	color: rgba(255, 255, 255, .6);
-}
-
-.user-navigation-footer .log-out-footer:focus {
-	color: rgba(255, 255, 255, .1);
-}
-
-.phone {
-	color: #ffffff;
+.container {
+	width: 1160px;
+	padding: 0 10px;
+	margin: 0 auto;
 }
 
 /*----------modal-write-us------------------------------*/
@@ -471,3 +102,476 @@ address {
 	color: rgba(70, 70, 70, .4);
 }
 
+/*----------Header------------------------------*/
+
+.main-header {
+	margin-top: 40px;
+
+	background-color: #f8e296;
+}
+
+.main-header .wrapper {
+	position: relative;
+
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.logo-header {
+	position: relative;
+	top: -25px;
+
+	display: block;
+	margin-bottom: -10px;
+
+	font-size: 48px;
+	line-height: 48px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.inner-logo-header:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.inner-logo-header:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+.user-navigation {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	color: #000000;
+
+	list-style: none;
+}
+
+.user-navigation a {
+	color: #000000;
+}
+
+.user-navigation a:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.user-navigation a:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+.user-navigation > li:nth-child(1) {
+	margin-right: auto;
+}
+
+.user-navigation > li:nth-child(2) {
+	margin-right: 215px;
+}
+
+.user-navigation > li:nth-child(3) {
+	margin-right: 40px;
+}
+
+.user-search {
+	font: inherit;
+	color: rgba(70, 70, 70, 1);
+
+	border: none;
+	background-color: transparent;
+}
+
+.user-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(70, 70, 70, .3);
+}
+
+.user-search::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(70, 70, 70, .3);
+}
+
+.user-search:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(70, 70, 70, .3);
+}
+
+.user-search:-moz-placeholder { /* Firefox 18- */
+  color: rgba(70, 70, 70, .3);
+}
+
+.user-search:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(70, 70, 70, .6);
+}
+
+.user-search:hover::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(70, 70, 70, .6);
+}
+
+.user-search:hover:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(70, 70, 70, .6);
+}
+
+.user-search:hover:-moz-placeholder { /* Firefox 18- */
+  color: rgba(70, 70, 70, .6);
+}
+
+.user-navigation .log-out-header {
+	color: rgba(0, 0, 0, .3);
+}
+
+/*	В стайл-гайде небыло описания взаимодействия с этой кнопкой.
+Сам добавил. Уверен, в боевой ситуации дизайнер поддержал бы.	*/
+
+.user-navigation .log-out-header:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.user-navigation .log-out-header:focus {
+	color: rgba(0, 0, 0, .1);
+}
+
+.button-yellow {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	color: #000000;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+
+	background-color: transparent;
+}
+
+.button-yellow:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+.button-search {
+	color: #000000;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.button-search:hover {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.button-search:focus {
+	color: rgba(255, 255, 255, .3);
+
+	background-color: #000000;
+}
+
+.site-navigation {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #000000;
+
+	list-style: none;
+}
+
+.site-navigation > li:nth-child(1) {
+	margin-right: auto;
+}
+
+.site-navigation > li:nth-child(2) {
+	margin-right: 40px;
+}
+
+.site-navigation > li:nth-child(3) {
+	margin-right: 120px;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.site-navigation a:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+.catalog-hidden {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 36px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	text-transform: none;
+	letter-spacing: 0.15px;
+	color: #000000;
+
+	list-style: none;
+}
+
+.catalog-hidden a {
+	color: #000000;
+}
+
+.catalog-hidden a:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.catalog-hidden a:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+/*----------Main------------------------------*/
+
+.information-us {
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-title {
+	font-size: 47px;
+	line-height: 48px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.17px;
+	color: #000000;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	letter-spacing: 0.14px;
+	color: rgba(0, 0, 0, .3);
+
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: rgba(0, 0, 0, .3);
+}
+
+.breadcrumbs a:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.breadcrumbs a:focus {
+	color: rgba(0, 0, 0, .1);
+}
+
+.information-us h2 {
+	font-size: 47px;
+	line-height: 48px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.21px;
+	color: #000000;
+}
+
+.about-us {
+	width: 465px;
+}
+
+.about-us-list {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 40px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	color: #000000;
+
+	list-style: none;
+}
+
+.about-us-list a {
+	color: #000000;
+}
+
+.about-us-list a:hover {
+	color: rgba(0, 0, 0, .6);
+}
+
+.about-us-list a:focus {
+	color: rgba(0, 0, 0, .3);
+}
+
+.contacts {
+	width: 560px;
+}
+
+.filter-color ul,
+.filter-bluetooth ul {
+	list-style: none;
+}
+
+.filter-color legend,
+.filter-bluetooth legend {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.filter-color label,
+.filter-bluetooth label {
+	font-size: 14px;
+	line-height: 40px;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-details a {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.18px;
+	color: #000000;
+}
+
+.catalog-details span {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Light", "Arial", sans-serif;
+	letter-spacing: 0.16px;
+	color: #464646;
+}
+
+/*----------Footer------------------------------*/
+
+.main-footer {
+	background-color: #464646;
+}
+
+.user-line-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo-footer {
+	font-size: 48px;
+	line-height: 48px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.48px;
+	text-transform: uppercase;
+	color: #ffc600;
+}
+
+.inner-logo-footer:hover {
+	color: rgba(255, 198, 0, .6);
+}
+
+.inner-logo-footer:focus {
+	color: rgba(255, 198, 0, .3);
+}
+
+.navigation-line-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+address {
+	font-style: normal;
+	color: #ffffff;
+}
+
+.navigation-footer {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	color: #ffffff;
+
+	list-style: none;
+}
+
+.navigation-footer li:not(:last-child) {
+	margin-right: 35px;
+}
+
+.navigation-footer a {
+	color: #ffffff;
+}
+
+.navigation-footer a:hover {
+	color: rgba(255, 255, 255, .6);
+}
+
+.navigation-footer a:focus {
+	color: rgba(255, 255, 255, .3);
+}
+
+.user-navigation-footer {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
+	color: rgba(255, 255, 255, .7);
+
+	list-style: none;
+}
+
+.user-navigation-footer a {
+	color: rgba(255, 255, 255, .7);
+}
+
+.user-navigation-footer a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.user-navigation-footer a:focus {
+	color: rgba(255, 255, 255, .3);
+}
+
+.user-navigation-footer .log-out-footer {
+	color: rgba(255, 255, 255, .3);
+}
+
+.user-navigation-footer > li:nth-child(1) {
+	margin-right: 42px;
+}
+
+.user-navigation-footer > li:nth-child(2) {
+	margin-right: 40px;
+}
+
+/*	В стайл-гайде небыло описания взаимодействия с этой кнопкой. Поговорил с дизайнером.	*/
+
+.user-navigation-footer .log-out-footer:hover {
+	color: rgba(255, 255, 255, .6);
+}
+
+.user-navigation-footer .log-out-footer:focus {
+	color: rgba(255, 255, 255, .1);
+}
+
+.phone {
+	color: #ffffff;
+}
+
+.social-line-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social-footer {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
