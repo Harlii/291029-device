@@ -12,27 +12,31 @@
 	<header class="main-header container">
 		<div class="wrapper">
 			<a class="logo-header">Device</a>
-			<ul class="user-navigation">
-				<li>
-					<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-						<input class="user-search" type="text" placeholder="Поиск по сайту">
-						<button class="button button-search" type="button">Найти</button>
-					</form>
-				</li>
-				<li><a href="#">Войти</a></li>
-				<li><a href="#">Сравнить</a></li>
-				<li><a href="#">Корзина</a></li>
-			</ul>
+			<div class="user-columns">
+				<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+					<input class="user-search" type="text" placeholder="Поиск по сайту">
+					<button class="button button-search" type="submit">Найти</button>
+				</form>
+				<ul class="user-navigation">
+					<li><a class="log-in-header" href="#">Войти</a></li>
+					<li><a class="compare-header" href="#">Сравнить</a></li>
+					<li><a class="cart-header" href="#">Корзина</a></li>
+				</ul>
+			</div>
 			<nav class="main-navigation">
 				<ul class="site-navigation">
 					<li>
 						<a class="catalog" href="#">Каталог товаров</a>
 						<ul class="catalog-hidden">
-							<li><a href="#">Виртуальная реальность</a></li>
-							<li><a href="inner.html">Моноподы для селфи</a></li>
-							<li><a href="#">Экшн-камеры</a></li>
-							<li><a href="#">Фитнес-браслеты</a></li>
-							<li><a href="#">Умные часы</a></li>
+							<li>
+								<a href="#">Виртуальная реальность</a>
+								<a href="inner.html">Моноподы для селфи</a>
+								<a href="#">Экшн-камеры</a>
+							</li>
+							<li>
+								<a href="#">Фитнес-браслеты</a>
+								<a href="#">Умные часы</a>
+							</li>
 							<li><a href="#">Квадрокоптеры</a></li>
 						</ul>
 					</li>
@@ -76,9 +80,9 @@
 			<div class="user-line-footer">
 				<a class="logo-footer">Device</a>
 				<ul class="user-navigation-footer">
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
+					<li><a class="log-in-footer" href="#">Войти</a></li>
+					<li><a class="compare-footer" href="#">Сравнить</a></li>
+					<li><a class="cart-footer" href="#">Корзина</a></li>
 				</ul>
 			</div>
 			<div class="navigation-line-footer">
