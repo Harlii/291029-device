@@ -111,7 +111,7 @@ input[type="radio"].visually-hidden {
 
 .main-header {
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 
 	background-color: #f8e296;
 }
@@ -130,12 +130,12 @@ input[type="radio"].visually-hidden {
 .logo-header {
 	position: absolute;
 	top: -24px;
-	left: -2px;
+	left: -3px;
 
 	font-size: 48px;
 	line-height: 48px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.48px;
+	letter-spacing: 0.6px;
 	text-transform: uppercase;
 	color: #000000;
 }
@@ -161,7 +161,6 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 
 	color: #000000;
-
 	list-style: none;
 }
 
@@ -203,7 +202,6 @@ input[type="radio"].visually-hidden {
 .log-in-header::before,
 .user-name-header::before {
 	content: "";
-
 	position: absolute;
 	top: 5px;
 	left: 0px;
@@ -219,7 +217,6 @@ input[type="radio"].visually-hidden {
 
 .compare-header::before {
 	content: "";
-
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -235,7 +232,6 @@ input[type="radio"].visually-hidden {
 
 .cart-header::before {
 	content: "";
-
 	position: absolute;
 	top: 5px;
 	left: 0;
@@ -257,7 +253,6 @@ input[type="radio"].visually-hidden {
 
 .form-search::before {
 	content: "";
-
 	position: absolute;
 	top: 9px;
 	left: 3px;
@@ -354,14 +349,30 @@ input[type="radio"].visually-hidden {
 }
 
 .button-yellow {
+	position: relative;
+
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
 	color: #000000;
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
+	text-align: center;
 
 	background-color: transparent;
+}
+
+.button-yellow::before {
+	content: "";
+	position: absolute;
+	top: 35%;
+	left: 0;
+	z-index: -1;
+
+	width: 100%;
+	height: 8px;
+
+	background-color: #f0c52e;
 }
 
 .button-yellow:focus {
@@ -381,8 +392,14 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	color: #000000;
-
 	list-style: none;
+}
+
+.button-more-us,
+.button-write-us {
+	display: block;
+	width: 220px;
+	padding: 5px 20px;
 }
 
 .site-navigation > li:nth-child(1) {
@@ -406,7 +423,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation .catalog::after {
 	content: "";
-
 	position: absolute;
 	top: 1px;
 	right: 8px;
@@ -452,7 +468,6 @@ input[type="radio"].visually-hidden {
 	text-transform: none;
 	letter-spacing: 0.15px;
 	color: #000000;
-
 	list-style: none;
 }
 
@@ -551,7 +566,6 @@ address {
 	letter-spacing: 3.6px;
 	text-transform: uppercase;
 	color: #ffffff;
-
 	list-style: none;
 }
 
@@ -577,7 +591,6 @@ address {
 	padding: 0;
 
 	color: rgba(255, 255, 255, .7);
-
 	list-style: none;
 }
 
@@ -597,7 +610,6 @@ address {
 .log-in-footer::before,
 .user-name-footer::before {
 	content: "";
-
 	position: absolute;
 	top: 5px;
 	left: 0px;
@@ -613,7 +625,6 @@ address {
 
 .compare-footer::before {
 	content: "";
-
 	position: absolute;
 	top: 7px;
 	left: 0;
@@ -629,7 +640,6 @@ address {
 
 .cart-footer::before {
 	content: "";
-
 	position: absolute;
 	top: 5px;
 	left: 0;
@@ -777,13 +787,13 @@ address {
 
 .page-title {
 	margin: 0;
-	margin-bottom: 25px;
-	margin-left: 60px;
+	margin-bottom: 23px;
+	margin-left: 59px;
 
 	font-size: 47px;
 	line-height: 48px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
-	letter-spacing: 0.17px;
+	letter-spacing: 0.65px;
 	color: #000000;
 }
 
@@ -800,19 +810,17 @@ address {
 	font-family: "Open Sans", "Arial", sans-serif;
 	letter-spacing: 0.14px;
 	color: rgba(0, 0, 0, .3);
-
 	list-style: none;
 }
 
 .breadcrumbs > li:not(:last-child) {
 	position: relative;
 
-	margin-right: 35px;
+	margin-right: 37px;
 }
 
 .breadcrumbs > li:not(:last-child)::after {
 	content: "";
-
 	position: absolute;
 	top: 9px;
 	right: -19px;
@@ -845,11 +853,7 @@ address {
 
 .filter {
 	width: 200px;
-	margin-left: 60px;
-}
-
-.form-filter fieldset {
-	border: none;
+	margin-left: 59px;
 }
 
 .catalog-items {
@@ -879,7 +883,6 @@ address {
 .about-us > h2::before,
 .contacts > h2::before {
 	content: "";
-
 	position: absolute;
 	top: -53px;
 	left: 0;
@@ -898,13 +901,12 @@ address {
 .about-us-list {
 	margin: 0;
 	padding: 0;
-	margin: 66px 0 60px 35px;
+	margin: 66px 0 58px 35px;
 
 	font-size: 16px;
 	line-height: 40px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
 	color: #000000;
-
 	list-style: none;
 }
 
@@ -914,7 +916,6 @@ address {
 
 .about-us-list > li::before {
 	content: "";
-
 	position: absolute;
 	top: 16px;
 	left: -34px;
@@ -951,13 +952,23 @@ address {
 
 .map-contacts {
 	display: block;
-	margin-bottom: 66px;
+	margin-bottom: 64px;
+}
+
+.filter-color {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	margin-bottom: 43px;
+
+	border: none;
 }
 
 .filter-color ul {
 	margin: 0;
 	padding: 0;
-	margin: 30px 0 45px 35px;
+	margin-left: 39px;
 
 	list-style: none;
 }
@@ -971,9 +982,8 @@ address {
 
 .filter-input-checkbox + label::before {
 	content: "";
-
 	position: absolute;
-	top: 0px;
+	top: -2px;
 	left: -40px;
 
 	width: 27px;
@@ -984,15 +994,10 @@ address {
 	background-position: left center;
 }
 
-.filter-input-checkbox:checked + label::before {
-	background-image: url(../img/icon-checkbox-on.svg);
-}
-
 .filter-input-radio + label::before {
 	content: "";
-
 	position: absolute;
-	top: 0px;
+	top: -4px;
 	left: -40px;
 
 	width: 25px;
@@ -1003,20 +1008,58 @@ address {
 	background-position: center;
 }
 
+.filter-input:hover + label::before {
+	opacity: .6;
+}
+
+.filter-input-checkbox:checked + label::before {
+	background-image: url(../img/icon-checkbox-on.svg);
+}
+
+.filter-input-checkbox:active + label::before {
+	background-image: url(../img/icon-checkbox-on.svg);
+	opacity: 1;
+}
+
 .filter-input-radio:checked + label::before {
 	background-image: url(../img/icon-radio-on.svg);
+}
+
+.filter-input-radio:active + label::before {
+	background-image: url(../img/icon-radio-on.svg);
+	opacity: 1;
+}
+
+.filter-input:disabled + label::before {
+	opacity: .25;
+}
+
+.filter-input:disabled + label {
+	color: #a6a6a6;
+}
+
+.filter-bluetooth {
+
+	position: relative;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 37px;
+
+	border: none;
 }
 
 .filter-bluetooth ul {
 	margin: 0;
 	padding: 0;
-	margin: 35px 0 50px 35px;
+	margin-left: 39px;
 
 	list-style: none;
 }
 
 .filter-color legend,
 .filter-bluetooth legend {
+	margin-bottom: 18px;
+
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
@@ -1032,6 +1075,24 @@ address {
 	color: #000000;
 }
 
+.filter-color::before,
+.filter-bluetooth::before {
+	content: "";
+	position: absolute;
+	top: -12px;
+
+	width: 100%;
+	height: 2px;
+
+	background-color: #000000;
+}
+
+.button-show-filter {
+	width: 100%;
+
+	cursor: pointer;
+}
+
 .catalog-list {
 	display: flex;
 	justify-content: space-between;
@@ -1042,13 +1103,19 @@ address {
 	list-style: none;
 }
 
+.catalog-list > li {
+	margin-bottom: 46px;
+}
+
 .catalog-details {
 	display: flex;
 	justify-content: space-between;
+	margin: 0;
+	margin-top: 23px;
 }
 
 .catalog-details a {
-	width: 230px;
+	width: 260px;
 
 	font-size: 18px;
 	line-height: 24px;
