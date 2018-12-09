@@ -110,27 +110,20 @@ input[type="radio"].visually-hidden {
 /*----------Header------------------------------*/
 
 .main-header {
-	margin-top: 40px;
-	margin-bottom: 38px;
-
-	background-color: #f8e296;
-}
-
-.main-header .wrapper {
 	position: relative;
 
-	width: 1040px;
 	height: 300px;
-	margin: 0 auto;
-	padding-top: 42px;
-
+	margin-top: 40px;
+	margin-bottom: 38px;
+	padding: 42px 60px 0 60px;
 	box-sizing: border-box;
+
+	background-color: #f8e296;
 }
 
 .logo-header {
 	position: absolute;
 	top: -24px;
-	left: -3px;
 
 	font-size: 48px;
 	line-height: 48px;
@@ -206,7 +199,6 @@ input[type="radio"].visually-hidden {
 	top: 5px;
 	left: 0px;
 
-
 	width: 13px;
 	height: 12px;
 
@@ -221,7 +213,6 @@ input[type="radio"].visually-hidden {
 	top: 7px;
 	left: 0;
 
-
 	width: 10px;
 	height: 10px;
 
@@ -235,7 +226,6 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	top: 5px;
 	left: 0;
-
 
 	width: 12px;
 	height: 12px;
@@ -373,9 +363,17 @@ input[type="radio"].visually-hidden {
 	height: 8px;
 
 	background-color: #f0c52e;
+
+	transition: .3s;
 }
 
-.button-yellow:focus {
+.button-yellow:hover::before {
+	top: 0;
+
+	height: 100%;
+}
+
+.button-yellow:active {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -399,7 +397,7 @@ input[type="radio"].visually-hidden {
 .button-write-us {
 	display: block;
 	width: 220px;
-	padding: 5px 20px;
+	padding: 8px 20px;
 }
 
 .site-navigation > li:nth-child(1) {
@@ -500,7 +498,7 @@ input[type="radio"].visually-hidden {
 	margin-right: 75px;
 }
 
-.inner-page .wrapper {
+.inner-page .main-header {
 	height: 186px;
 }
 
@@ -546,7 +544,7 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 63px;
 }
 
-address {
+.address {
 	width: 215px;
 	margin-right: auto;
 
@@ -614,7 +612,6 @@ address {
 	top: 5px;
 	left: 0px;
 
-
 	width: 13px;
 	height: 12px;
 
@@ -629,7 +626,6 @@ address {
 	top: 7px;
 	left: 0;
 
-
 	width: 10px;
 	height: 10px;
 
@@ -643,7 +639,6 @@ address {
 	position: absolute;
 	top: 5px;
 	left: 0;
-
 
 	width: 12px;
 	height: 12px;
@@ -803,7 +798,6 @@ address {
 	padding: 0;
 	margin-bottom: 45px;
 	margin-left: 60px;
-
 
 	font-size: 14px;
 	line-height: 24px;
