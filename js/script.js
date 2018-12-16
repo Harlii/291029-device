@@ -28,6 +28,7 @@ mapContacts.addEventListener("click", function (evt) {
 writeUsClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modalWriteUs.classList.remove("modal-show");
+	modalWriteUs.classList.remove("modal-error");
 });
 
 mapClose.addEventListener("click", function (evt) {
@@ -38,7 +39,9 @@ mapClose.addEventListener("click", function (evt) {
 formWriteUs.addEventListener("submit", function (evt) {
 	evt.preventDefault();
 	if (!userName.value || !userEmail.value) {
-		console.log("Мне это не нравится");
+		modalWriteUs.classList.remove("modal-error");
+		modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
+		modalWriteUs.classList.add("modal-error");
 	} else {
 		console.log("Ты красавчик");
 	}
@@ -51,6 +54,16 @@ window.addEventListener("keydown", function (evt) {
 		if (modalWriteUs.classList.contains("modal-show")) {
 			evt.preventDefault();
 			modalWriteUs.classList.remove("modal-show");
+			modalWriteUs.classList.remove("modal-error");
+		}
+	}
+});
+
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		if (modalMap.classList.contains("modal-show")) {
+			evt.preventDefault();
+			modalMap.classList.remove("modal-show");
 		}
 	}
 });

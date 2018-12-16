@@ -79,12 +79,14 @@ input[type="radio"].visually-hidden {
 	left: 50%;
 
 	display: none;
-	width: 760px;
+	width: 960px;
+	height: 553px;
 	padding: 93px 100px 77px 100px;
+	margin-top: -276px;
+	margin-left: -480px;
+	box-sizing: border-box;
 
 	background-color: #ffffff;
-
-	transform: translate(-50%, -50%);
 }
 
 .modal-map {
@@ -93,23 +95,49 @@ input[type="radio"].visually-hidden {
 
 	display: none;
 	width: 960px;
-	height: 559px;
-
-	transform: translate(-50%, -50%);
+	height: 560px;
+	margin-top: -280px;
+	margin-left: -480px;
+	box-sizing: border-box;
 }
 
-.modal-show {
-	display: block;
+.modal-map p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	margin: 0;
 }
 
 .modal-map img {
 	display: block;
 }
 
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+
+	border: none;
+}
+
+.modal-show {
+	display: block;
+
+	animation-name: bounce;
+	animation-duration: .5s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: .5s;
+}
+
 .modal-close {
 	position: absolute;
 	top: 22px;
 	right: 22px;
+	z-index: 2;
 
 	width: 55px;
 	height: 55px;
@@ -240,6 +268,40 @@ input[type="radio"].visually-hidden {
 	cursor: pointer;
 }
 
+@keyframes bounce {
+	0% {
+		transform: translateY(-2000px);
+	}
+	70% {
+		transform: translateY(30px);
+	}
+	90% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
+}
 
 /*----------Header------------------------------*/
 
@@ -271,7 +333,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, .6);
 }
 
-.inner-logo-header:focus {
+.inner-logo-header:active {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -307,8 +369,7 @@ input[type="radio"].visually-hidden {
 	opacity: .6;
 }
 
-.user-navigation a:active,
-.user-navigation a:focus {
+.user-navigation a:active {
 	opacity: .3;
 }
 
@@ -459,7 +520,7 @@ input[type="radio"].visually-hidden {
 	background-color: #000000;
 }
 
-.button-search:focus {
+.button-search:active {
 	color: rgba(255, 255, 255, .3);
 
 	background-color: #000000;
@@ -469,7 +530,8 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
-.user-search:focus {
+.user-search:focus,
+.user-search:active {
 	border-bottom: 2px solid #000000;
 	outline: none;
 }
@@ -488,11 +550,11 @@ input[type="radio"].visually-hidden {
 Сам добавил. Уверен, в боевой ситуации дизайнер поддержал бы.	*/
 
 .user-navigation .log-out-header:hover {
-	color: rgba(0, 0, 0, .6);
+	color: rgba(0, 0, 0, .7);
 }
 
-.user-navigation .log-out-header:focus {
-	color: rgba(0, 0, 0, .1);
+.user-navigation .log-out-header:active {
+	color: rgba(0, 0, 0, .2);
 }
 
 .button-yellow {
@@ -601,8 +663,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, .6);
 }
 
-.site-navigation a:active,
-.site-navigation a:focus {
+.site-navigation a:active {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -649,7 +710,7 @@ input[type="radio"].visually-hidden {
 	color: inherit;
 }
 
-.catalog-hidden a:focus {
+.catalog-hidden a:active {
 	color: rgba(0, 0, 0, .3);
 }
 
@@ -708,12 +769,12 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 198, 0, .6);
 }
 
-.inner-logo-footer:focus {
+.inner-logo-footer:active {
 	color: rgba(255, 198, 0, .3);
 }
 
 .address {
-	width: 340px;
+	width: 320px;
 	margin-bottom: 54px;
 
 	font-style: normal;
@@ -752,7 +813,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, .6);
 }
 
-.navigation-footer a:focus {
+.navigation-footer a:active {
 	color: rgba(255, 255, 255, .3);
 }
 
@@ -838,8 +899,7 @@ input[type="radio"].visually-hidden {
 	opacity: .6;
 }
 
-.user-navigation-footer a:active,
-.user-navigation-footer a:focus {
+.user-navigation-footer a:active {
 	opacity: .3;
 }
 
@@ -860,16 +920,23 @@ input[type="radio"].visually-hidden {
 	color: rgba(255, 255, 255, .6);
 }
 
-.user-navigation-footer .log-out-footer:focus {
+.user-navigation-footer .log-out-footer:active {
 	color: rgba(255, 255, 255, .1);
 }
 
 .phone {
-	width: 340px;
+	width: 320px;
+	margin: 0;
+	margin-bottom: 54px;
 
 	text-align: right;
 	letter-spacing: normal;
 	color: #ffffff;
+}
+
+.phone  a {
+	color: #ffffff;
+
 }
 
 .social-line-footer {
@@ -937,8 +1004,7 @@ input[type="radio"].visually-hidden {
 	opacity: .6;
 }
 
-.social-button:focus {
-	border-radius: 50%;
+.social-button:active {
 	opacity: .1;
 }
 
@@ -956,7 +1022,7 @@ input[type="radio"].visually-hidden {
 	opacity: .6;
 }
 
-.developed-by:focus {
+.developed-by:active {
 	opacity: .3;
 }
 
@@ -1027,7 +1093,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, .6);
 }
 
-.breadcrumbs a:focus {
+.breadcrumbs a:active {
 	color: rgba(0, 0, 0, .1);
 }
 
@@ -1122,7 +1188,7 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, .6);
 }
 
-.about-us-list a:focus {
+.about-us-list a:active {
 	color: rgba(0, 0, 0, .3);
 }
 
