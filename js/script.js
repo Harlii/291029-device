@@ -36,14 +36,14 @@ mapClose.addEventListener("click", function (evt) {
 	modalMap.classList.remove("modal-show");
 });
 
+/*----------Проверка на пустые поля----------*/
+
 formWriteUs.addEventListener("submit", function (evt) {
-	evt.preventDefault();
 	if (!userName.value || !userEmail.value) {
+		evt.preventDefault();
 		modalWriteUs.classList.remove("modal-error");
 		modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
 		modalWriteUs.classList.add("modal-error");
-	} else {
-		console.log("Ты красавчик");
 	}
 });
 
