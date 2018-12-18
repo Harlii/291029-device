@@ -310,7 +310,7 @@ input[type="radio"].visually-hidden {
 
 	margin-top: 40px;
 	margin-bottom: 38px;
-    padding: 33px 60px 143px 60px;
+    padding: 33px 60px 142px 60px;
 	box-sizing: border-box;
 
 	background-color: #f8e296;
@@ -598,6 +598,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
+	position: relative;
+
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -670,18 +672,20 @@ input[type="radio"].visually-hidden {
 
 .catalog-hidden {
 	position: absolute;
+	top: 44px;
 	right: 0;
 	left: 0;
-	bottom: 0;
 	z-index: 1;
 
 	display: none;
 	flex-wrap: wrap;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	padding-left: 60px;
 	padding-right: 60px;
-	padding-bottom: 35px;
+	padding-bottom: 14px;
+	margin-left: -60px;
 
 	font-weight: 300;
 	font-size: 15px;
@@ -715,25 +719,25 @@ input[type="radio"].visually-hidden {
 	color: rgba(0, 0, 0, .3);
 }
 
-.catalog-hidden > li {
+.catalog-hidden > ul {
 	display: flex;
 	flex-direction: column;
+	padding: 0;
+	margin-bottom: 20px;
+
+	list-style: none;
 }
 
-.catalog-hidden > li:not(:last-child) {
+.catalog-hidden > ul:not(:last-child) {
 	margin-right: 60px;
 }
 
-.catalog-hidden > li:nth-child(2) {
+.catalog-hidden > ul:nth-child(2) {
 	margin-right: 75px;
 }
 
 .inner-page .main-header {
 	padding-bottom: 29px;
-}
-
-.inner-page .catalog-hidden {
-	bottom: -114px;
 }
 
 /*----------Footer------------------------------*/
@@ -1012,7 +1016,8 @@ input[type="radio"].visually-hidden {
 .developed-by {
 	display: block;
 	order: 2;
-	width: 80px;
+	width: 30px;
+	margin-left: 50px;
 
 	background-image: url(../img/icon-logo-html.svg);
 	background-repeat: no-repeat;
