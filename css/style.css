@@ -1213,6 +1213,92 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 64px;
 }
 
+.filter-range {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+	margin-bottom: 46px;
+
+	border: none;
+}
+
+.range-controls {
+	position: relative;
+
+	margin-top: 17px;
+	margin-bottom: 9px;
+}
+
+.range-controls .scale {
+	height: 2px;
+
+	background-color: #dbdbdb;
+}
+
+.range-controls .bar {
+	width: 60%;
+	height: 2px;
+
+	background-color: #91c92f;
+}
+
+.range-toggle::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+
+	width: 4px;
+	height: 4px;
+
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ababab;
+	box-shadow: 0 2px 0 0 #dadada;
+	cursor: pointer;
+}
+
+.range-toggle-min::before {
+	left: -5px;
+}
+
+.range-toggle-max::before {
+	left: 54%;
+}
+
+.range-toggle:active::before {
+	top: -10px;
+
+	border-width: 9px;
+}
+
+.price-controls {
+	display: flex;
+}
+
+.price-controls label {
+	font-size: 14px;
+	line-height: 24px;
+	font-family: "Gilroy Light", "Arial", sans-serif;
+	opacity: 0.2;
+	color: #000000;
+
+	border: none;
+	background-color: transparent;
+}
+
+.price-controls input {
+	width: 50px;
+	padding: 0;
+
+	border: none;
+	background-color: transparent;
+}
+
+.price-controls .min-price {
+	margin-right: 21px;
+}
+
 .filter-color {
 	position: relative;
 
@@ -1339,6 +1425,7 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 }
 
+.filter-range legend,
 .filter-color legend,
 .filter-bluetooth legend {
 	margin-bottom: 18px;
@@ -1360,6 +1447,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
+.filter-range::before,
 .filter-color::before,
 .filter-bluetooth::before {
 	content: "";
