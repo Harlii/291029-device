@@ -840,6 +840,75 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 29px;
 }
 
+.paggination {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 77px;
+
+	background-color: #ebebeb;
+}
+
+.button-paggination {
+	padding: 23px 28px;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 3.8px;
+	text-transform: uppercase;
+	color: #000000;
+	text-align: center;
+}
+
+.button-paggination:hover {
+	background-color: #d9d9d9;
+}
+
+.button-paggination:active {
+	color: rgba(0, 0, 0, .3);
+
+	background-color: #d9d9d9;
+}
+
+.paggination-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.paggination-list > li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.paggination-list a {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 0.91px;
+	text-transform: uppercase;
+	opacity: .3;
+	color: #000000;
+
+	cursor: pointer;
+}
+
+.paggination-list .paggination-current {
+	opacity: 1;
+}
+
+.paggination-list a:hover {
+	opacity: .6;
+}
+
+.paggination-list a:active {
+	opacity: 1;
+}
+
 /*----------Footer------------------------------*/
 
 .main-footer {
@@ -1197,7 +1266,7 @@ input[type="radio"].visually-hidden {
 	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 46px;
 	margin-left: 60px;
 	margin-right: 60px;
 
@@ -1245,6 +1314,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
+	padding-top: 69px;
+
+	background-image: linear-gradient(to right, #eeeeee 32.5%, #ffffff 32.5%);
+}
+
+.catalog-columns .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1253,9 +1328,114 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 }
 
+.navigation-title {
+	background-image: linear-gradient(to right, #dbdbdb 32.5%, #ebebeb 32.5%);
+}
+
+.navigation-title .container {
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+}
+
+.navigation-title .filter-title {
+	margin: 0;
+	margin-left: 60px;
+	margin-right: auto;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 3.7px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sorting {
+	display: flex;
+	width: 760px;
+}
+
+.sorting-title {
+	margin: 0;
+	margin-right: 50px;
+
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Gilroy Extra Bold", "Arial", sans-serif;
+	letter-spacing: 3.7px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.sorting-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	margin-right: auto;
+
+	list-style: none;
+}
+
+.sorting-list > li {
+	margin-right: 32px;
+
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	opacity: .3;
+	color: #000000;
+
+	cursor: pointer;
+}
+
+.sorting-list > li:hover {
+	opacity: .6;
+}
+
+.sorting-list > li:active {
+	opacity: 1;
+}
+
+.sorting-list .sorting-current {
+	opacity: 1;
+}
+
+.sorting-icon {
+	width: 11px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	opacity: .2;
+}
+
+.sorting-icon:hover {
+	opacity: .4;
+}
+
+.sorting-icon:active {
+	opacity: 1;
+}
+
+.sorting-current {
+	opacity: 1;
+}
+
+.sorting-ascending {
+	margin-right: 19px;
+
+	background-image: url(../img/icon-up-dir.svg);
+}
+
+.sorting-descending {
+	background-image: url(../img/icon-down-dir.svg);
+}
+
 .filter {
 	width: 200px;
 	margin-left: 59px;
+	margin-top: 12px;
 }
 
 .catalog-items {
@@ -1325,10 +1505,11 @@ input[type="radio"].visually-hidden {
 
 	width: 8px;
 	height: 8px;
+	box-sizing: border-box;
 
-	background-image: url(../img/icon-list-type.svg);
-	background-repeat: no-repeat;
-	background-position: center;
+	border: 2px solid #e5e5e5;
+	border-radius: 50%;
+	background-color: transparent;
 }
 
 .about-us-list a {
@@ -1613,6 +1794,8 @@ input[type="radio"].visually-hidden {
 }
 
 .button-show-filter {
+	z-index: 0;
+
 	width: 100%;
 	padding: 8px 0;
 
@@ -1627,6 +1810,7 @@ input[type="radio"].visually-hidden {
 	    flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	margin-bottom: -11px;
 
 	list-style: none;
 }
@@ -1916,3 +2100,14 @@ input[type="radio"].visually-hidden {
 	        filter: saturate(1);
 	opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
