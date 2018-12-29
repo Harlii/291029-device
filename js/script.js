@@ -1,21 +1,39 @@
 /*----------modal-write-us, modal-map------------------------------*/
 
 var linkWriteUs = document.querySelector(".button-write-us");
-var mapContacts = document.querySelector(".map-contacts");
 var modalWriteUs = document.querySelector(".modal-write-us");
-var modalMap = document.querySelector(".modal-map");
 var writeUsClose = modalWriteUs.querySelector(".modal-close");
-var mapClose = modalMap.querySelector(".modal-close");
+
 var userName = modalWriteUs.querySelector("[name=name]");
 var userEmail = modalWriteUs.querySelector("[name=email]");
 var formWriteUs = modalWriteUs.querySelector(".form-write-us");
+
+var mapContacts = document.querySelector(".map-contacts");
+var modalMap = document.querySelector(".modal-map");
+var mapClose = modalMap.querySelector(".modal-close");
+
+var isStorageSupport = true;
+var userStorage = "";
+
+/*----------Убеждаемся, что localStorage существует----------*/
+
+try {
+	userStorage = localStorage.getItem("userName");
+} catch(err) {
+	isStorageSupport = false;
+}
 
 /*----------Добавление класса, что бы появился popup----------*/
 
 linkWriteUs.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	modalWriteUs.classList.add("modal-show");
-	userName.focus();
+	if (userStorage) {
+		userName.value = userStorage;
+		userEmail.focus();
+	} else {
+		userName.focus();
+	}
 });
 
 mapContacts.addEventListener("click", function (evt) {
@@ -44,6 +62,10 @@ formWriteUs.addEventListener("submit", function (evt) {
 		modalWriteUs.classList.remove("modal-error");
 		modalWriteUs.offsetWidth = modalWriteUs.offsetWidth;
 		modalWriteUs.classList.add("modal-error");
+	} else {
+		if (isStorageSupport) {
+			localStorage.setItem("userName", userName.value);
+		}
 	}
 });
 

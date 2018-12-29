@@ -48,9 +48,74 @@
 		</nav>
 	</header>
 
-	<main class="container">
+	<main>
 		<h1 class="visually-hidden">Интернет магазин «Девайс»</h1>
-		<ul class="category-list">
+		<section class="slider container">
+			<h2 class="visually-hidden">Краткое описание некоторых товаров</h2>
+			<input class="visually-hidden" type="radio" id="product-monopods" name="toggle" checked>
+			<input class="visually-hidden" type="radio" id="product-bracelets" name="toggle">
+			<input class="visually-hidden" type="radio" id="product-quadcopters" name="toggle">
+			<div class="slider-controls">
+				<label class="slider-controls-monopods-for-selfie" for="product-monopods" aria-label="Первый">
+				</label>
+				<label class="slider-controls-fitness-bracelets" for="product-bracelets" aria-label="Второй"></label>
+				<label class="slider-controls-quadcopters" for="product-quadcopters" aria-label="Третий"></label>
+			</div>
+			<ul class="slider-list">
+				<li class="slider-item slider-item-monopods-for-selfie">
+					<h3 class="slider-title">Делай селфи,<br>как Бен Стиллер!</h3>
+					<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+					<table class="slider-table">
+						<tbody>
+							<tr>
+								<th>Длина палки</th>
+								<td>8,5 м</td>
+							</tr>
+							<tr>
+								<th>Вес палки</th>
+								<td>5 кг</td>
+							</tr>
+							<tr>
+								<th>Материал</th>
+								<td>Карбон</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+				<li class="slider-item slider-item-fitness-bracelets">
+					<h3 class="slider-title">Худеем<br>правильно!</h3>
+					<p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+					<table class="slider-table">
+						<tbody>
+							<tr>
+								<th>Без подзарядки</th>
+								<td>48 часов</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+				<li class="slider-item slider-item-quadcopters">
+					<h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+					<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+					<table class="slider-table">
+						<tbody>
+							<tr>
+								<th>Дальность полета</th>
+								<td>800 м</td>
+							</tr>
+							<tr>
+								<th>Радиус поражения</th>
+								<td>50 м</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</section>
+		<ul class="category-list container">
 			<li>
 				<a class="category-link" href="#">
 					<figure class="virtual-reality">
@@ -61,7 +126,7 @@
 			<li>
 				<a class="category-link" href="inner.html">
 					<figure class="monopods-for-selfie">
-						<figcaption>Моноподы<br> для селфи</figcaption>
+						<figcaption>Моноподы для селфи</figcaption>
 					</figure>
 				</a>
 			</li>
@@ -94,7 +159,36 @@
 				</a>
 			</li>
 		</ul>
-		<ul class="brands-list">
+
+		<div class="services-wrapper">
+			<section class="services container">
+				<h2 class="visually-hidden">Сервисы</h2>
+				<input class="visually-hidden" type="radio" id="service-delivery" name="service-toggle" checked>
+				<input class="visually-hidden" type="radio" id="service-warranty" name="service-toggle">
+				<input class="visually-hidden" type="radio" id="service-credit" name="service-toggle">
+				<div class="services-controls">
+					<label class="button button-yellow button-delivery" for="service-delivery">Доставка
+					</label>
+					<label class="button button-yellow button-warranty" for="service-warranty">Гарантия</label>
+					<label class="button button-yellow button-credit" for="service-credit">Кредит</label>
+				</div>
+				<ul class="services-list">
+					<li class="services-item services-item-delivery">
+						<h3 class="services-title">Доставка</h3>
+						<p class="services-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</li>
+					<li class="services-item services-item-warranty">
+						<h3 class="services-title">Гарантия</h3>
+						<p class="services-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+					</li>
+					<li class="services-item services-item-credit">
+						<h3 class="services-title">Кредит</h3>
+						<p class="services-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</li>
+			</section>
+		</div>
+
+		<ul class="brands-list container">
 			<li>
 				<a href="https://www.dji.com/ru">
 					<img src="img/logo-dji.png" alt="Китайская частная компания DJI" width="260" height="100">
@@ -116,7 +210,7 @@
 				</a>
 			</li>
 		</ul>
-		<section class="information-us">
+		<section class="information-us container">
 			<h2 class="visually-hidden">Информация о нас</h2>
 			<section class="about-us">
 				<h2>О нас</h2>
@@ -167,15 +261,15 @@
 	<section class="modal modal-write-us">
 		<h2 class="visually-hidden">Форма обратной связи</h2>
 		<form class="form-write-us" action="https://echo.htmlacademy.ru" method="post" >
-			<p class="name-info">
+			<p class="form-group">
 				<label for="user-name">Ваше имя:</label>
 				<input type="text" id="user-name" name="name" placeholder="Имя Фамилия">
 			</p>
-			<p class="email-info">
+			<p class="form-group">
 				<label for="user-email">Ваш e-mail:</label>
 				<input type="email" id="user-email" name="email" placeholder="email@example.com">
 			</p>
-			<p class="text-info">
+			<p class="form-group form-group-all">
 				<label for="user-text">Текст письма:</label>
 				<textarea id="user-text" name="text" placeholder="В свободной форме"></textarea>
 			</p>
