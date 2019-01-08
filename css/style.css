@@ -1562,8 +1562,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-range {
-	position: relative;
-
 	margin: 0;
 	margin-bottom: 46px;
 	padding: 0;
@@ -1651,8 +1649,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-color {
-	position: relative;
-
 	margin: 0;
 	margin-bottom: 43px;
 	padding: 0;
@@ -1765,7 +1761,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-bluetooth {
-	position: relative;
 	margin: 0;
 	margin-bottom: 32px;
 	padding: 0;
@@ -1783,6 +1778,8 @@ input[type="radio"].visually-hidden {
 .filter-range legend,
 .filter-color legend,
 .filter-bluetooth legend {
+	position: relative;
+
 	margin-bottom: 18px;
 
 	font-size: 18px;
@@ -1802,14 +1799,14 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 }
 
-.filter-range::before,
-.filter-color::before,
-.filter-bluetooth::before {
+.filter-range > legend::before,
+.filter-color > legend::before,
+.filter-bluetooth > legend::before {
 	content: "";
 	position: absolute;
 	top: -12px;
 
-	width: 100%;
+	width: 201px;
 	height: 2px;
 
 	background-color: #000000;
@@ -1986,7 +1983,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	margin-bottom: 40px;
+	margin-bottom: 41px;
 	padding: 0;
 }
 
@@ -2214,16 +2211,8 @@ input[id="product-quadcopters"]:focus ~ .slider-controls label[for="product-quad
 	list-style: none;
 }
 
-#product-monopods:checked ~ .slider-list .slider-item-monopods-for-selfie {
-	display: block;
-	background-color: red;
-}
-
-#product-bracelets:checked ~ .slider-list .slider-item-fitness-bracelets {
-	display: block;
-	background-color: blue;
-}
-
+#product-monopods:checked ~ .slider-list .slider-item-monopods-for-selfie,
+#product-bracelets:checked ~ .slider-list .slider-item-fitness-bracelets,
 #product-quadcopters:checked ~ .slider-list .slider-item-quadcopters {
 	display: block;
 }
@@ -2475,19 +2464,42 @@ input[id="product-quadcopters"]:focus ~ .slider-controls label[for="product-quad
 	letter-spacing: 0.25px;
 }
 
-#service-delivery:checked ~ .services-controls .button-delivery {
+#service-delivery:checked ~ .services-controls .button-delivery,
+#service-warranty:checked ~ .services-controls .button-warranty,
+#service-credit:checked ~ .services-controls .button-credit {
 	color: #f7e184;
 }
 
-#service-delivery:checked ~ .services-list .services-item-delivery {
-	display: block;
+.services-controls .button-yellow::before {
+	transition: 0s;
 }
 
-#service-warranty:checked ~ .services-list .services-item-warranty {
-	display: block;
+.services-controls .button-yellow:hover::before {
+	transition: 0.3s;
 }
 
+#service-delivery:checked ~ .services-controls .button-delivery::before,
+#service-warranty:checked ~ .services-controls .button-warranty::before,
+#service-credit:checked ~ .services-controls .button-credit::before {
+	width: 280px;
+	height: 100%;
+
+	background-color: #000000;
+
+	transition: 0s;
+}
+
+#service-delivery:focus ~ .services-controls .button-delivery::before,
+#service-warranty:focus ~ .services-controls .button-warranty::before,
+#service-credit:focus ~ .services-controls .button-credit::before {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+#service-delivery:checked ~ .services-list .services-item-delivery,
+#service-warranty:checked ~ .services-list .services-item-warranty,
 #service-credit:checked ~ .services-list .services-item-credit {
 	display: block;
 }
+
 
