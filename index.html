@@ -9,157 +9,167 @@
 </head>
 <body>
 
-	<header class="main-header container">
-		<a class="logo-header">Device</a>
-		<div class="user-columns">
-			<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
-				<input class="user-search" type="text" placeholder="Поиск по сайту">
-				<button class="button button-search" type="submit">Найти</button>
-			</form>
-			<ul class="user-navigation">
-				<li><a class="log-in-header" href="#">Войти</a></li>
-				<li><a class="compare-header" href="#">Сравнить</a></li>
-				<li><a class="cart-header" href="#">Корзина</a></li>
-			</ul>
-		</div>
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li class="site-navigation-catalog">
-					<a class="catalog" href="#">Каталог товаров</a>
-					<div class="catalog-hidden">
-						<ul>
-							<li><a href="#">Виртуальная реальность</a></li>
-							<li><a href="inner.html">Моноподы для селфи</a></li>
-							<li><a href="#">Экшн-камеры</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Фитнес-браслеты</a></li>
-							<li><a href="#">Умные часы</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">Квадрокоптеры</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<header class="main-header container">
+			<a class="logo-header">Device</a>
+			<div class="user-columns">
+				<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+					<label class="visually-hidden" for="user-search">Поиск по сайту</label>
+					<input class="user-search" type="search" id="user-search" placeholder="Поиск по сайту">
+					<button class="button button-search" type="submit">Найти</button>
+				</form>
+				<ul class="user-navigation">
+					<li><a class="button-log-in-header" href="#">Войти</a></li>
+					<li><a class="button-compare-header" href="#">Сравнить</a></li>
+					<li><a class="button-cart-header" href="#">Корзина</a></li>
+				</ul>
+			</div>
+			<nav class="main-navigation">
+				<ul class="site-navigation">
+					<li class="site-navigation-catalog">
+						<a class="catalog" href="#">Каталог товаров</a>
+						<div class="catalog-hidden">
+							<ul class="hidden-list-photo-video">
+								<li><a href="#">Виртуальная реальность</a></li>
+								<li><a href="monopods.html">Моноподы для селфи</a></li>
+								<li><a href="#">Экшн-камеры</a></li>
+							</ul>
+							<ul class="hidden-list-watch">
+								<li><a href="#">Фитнес-браслеты</a></li>
+								<li><a href="#">Умные часы</a></li>
+							</ul>
+							<ul class="hidden-list-quadcopters">
+								<li><a href="#">Квадрокоптеры</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 
 	<main>
 		<h1 class="visually-hidden">Интернет магазин «Девайс»</h1>
-		<section class="slider container">
-			<h2 class="visually-hidden">Краткое описание некоторых товаров</h2>
-			<input class="visually-hidden" type="radio" id="product-monopods" name="toggle" checked>
-			<input class="visually-hidden" type="radio" id="product-bracelets" name="toggle">
-			<input class="visually-hidden" type="radio" id="product-quadcopters" name="toggle">
-			<div class="slider-controls">
-				<label class="slider-controls-monopods-for-selfie" for="product-monopods" aria-label="Первый">
-				</label>
-				<label class="slider-controls-fitness-bracelets" for="product-bracelets" aria-label="Второй"></label>
-				<label class="slider-controls-quadcopters" for="product-quadcopters" aria-label="Третий"></label>
-			</div>
-			<ul class="slider-list">
-				<li class="slider-item slider-item-monopods-for-selfie">
-					<h3 class="slider-title">Делай селфи,<br>как Бен Стиллер!</h3>
-					<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
-					<table class="slider-table">
-						<tbody>
-							<tr>
-								<th>Длина палки</th>
-								<td>8,5 м</td>
-							</tr>
-							<tr>
-								<th>Вес палки</th>
-								<td>5 кг</td>
-							</tr>
-							<tr>
-								<th>Материал</th>
-								<td>Карбон</td>
-							</tr>
-						</tbody>
-					</table>
+		<div class="container">
+			<section class="slider">
+				<h2 class="visually-hidden">Краткое описание некоторых товаров</h2>
+				<input class="visually-hidden" type="radio" id="product-monopods" name="toggle" checked>
+				<input class="visually-hidden" type="radio" id="product-bracelets" name="toggle">
+				<input class="visually-hidden" type="radio" id="product-quadcopters" name="toggle">
+				<div class="slider-controls">
+					<label class="slider-controls-monopods-for-selfie" for="product-monopods" aria-label="Первый">
+					</label>
+					<label class="slider-controls-fitness-bracelets" for="product-bracelets" aria-label="Второй"></label>
+					<label class="slider-controls-quadcopters" for="product-quadcopters" aria-label="Третий"></label>
+				</div>
+				<ul class="slider-list">
+					<li class="slider-item slider-item-monopods-for-selfie">
+						<h3 class="slider-title">Делай селфи,<br>как Бен Стиллер!</h3>
+						<p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+						<table class="slider-table">
+							<tbody>
+								<tr>
+									<td>8,5 м</td>
+									<td>5 кг</td>
+									<td>Карбон</td>
+								</tr>
+								<tr>
+									<th>Длина палки</th>
+									<th>Вес палки</th>
+									<th>Материал</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li class="slider-item slider-item-fitness-bracelets">
+						<h3 class="slider-title">Худеем<br>правильно!</h3>
+						<p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+						<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+						<table class="slider-table">
+							<tbody>
+								<tr>
+									<td>48 часов</td>
+								</tr>
+								<tr>
+									<th>Без подзарядки</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+					<li class="slider-item slider-item-quadcopters">
+						<h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+						<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+						<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
+						<table class="slider-table">
+							<tbody>
+								<tr>
+									<td>800 м</td>
+									<td>50 м</td>
+								</tr>
+								<tr>
+									<th>Дальность полета</th>
+									<th>Радиус поражения</th>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+			</section>
+			<ul class="category-list container">
+				<li>
+					<a class="category-link virtual-reality" href="#">
+						<div class="category-image">
+							<img src="img/icon-virtual-reality.svg" alt="Виртуальная реальность" width="97" height="55">
+						</div>
+						<p>Виртуальная реальность</p>
+					</a>
 				</li>
-				<li class="slider-item slider-item-fitness-bracelets">
-					<h3 class="slider-title">Худеем<br>правильно!</h3>
-					<p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
-					<table class="slider-table">
-						<tbody>
-							<tr>
-								<th>Без подзарядки</th>
-								<td>48 часов</td>
-							</tr>
-						</tbody>
-					</table>
+				<li>
+					<a class="category-link monopods-for-selfie" href="monopods.html">
+						<div class="category-image">
+							<img src="img/icon-monopods-for-selfie.svg" alt="Моноподы для селфи" width="86" height="117">
+						</div>
+						<p>Моноподы для селфи</p>
+					</a>
 				</li>
-				<li class="slider-item slider-item-quadcopters">
-					<h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
-					<p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-					<a class="button button-yellow button-slider-detail" href="#">Подробнее</a>
-					<table class="slider-table">
-						<tbody>
-							<tr>
-								<th>Дальность полета</th>
-								<td>800 м</td>
-							</tr>
-							<tr>
-								<th>Радиус поражения</th>
-								<td>50 м</td>
-							</tr>
-						</tbody>
-					</table>
+				<li>
+					<a class="category-link action-cameras" href="#">
+						<div class="category-image">
+							<img src="img/icon-action-cameras.svg" alt="Экшн-камеры" width="71" height="87">
+						</div>
+						<p>Экшн-камеры</p>
+					</a>
+				</li>
+				<li>
+					<a class="category-link fitness-bracelets" href="#">
+						<div class="category-image">
+							<img src="img/icon-fitness-bracelets.svg" alt="Фитнес-браслеты" width="107" height="65">
+						</div>
+						<p>Фитнес-браслеты</p>
+					</a>
+				</li>
+				<li>
+					<a class="category-link smart-watch" href="#">
+						<div class="category-image">
+							<img src="img/icon-smart-watch.svg" alt="Умные часы" width="56" height="98">
+						</div>
+						<p>Умные часы</p>
+					</a>
+				</li>
+				<li>
+					<a class="category-link quadcopters" href="#">
+						<div class="category-image">
+							<img src="img/icon-quadcopters.svg" alt="Квадрокоптеры" width="132" height="69">
+						</div>
+						<p>Квадрокоптеры</p>
+					</a>
 				</li>
 			</ul>
-		</section>
-		<ul class="category-list container">
-			<li>
-				<a class="category-link" href="#">
-					<figure class="virtual-reality">
-						<figcaption>Виртуальная реальность</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a class="category-link" href="inner.html">
-					<figure class="monopods-for-selfie">
-						<figcaption>Моноподы для селфи</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a class="category-link" href="#">
-					<figure class="action-cameras">
-						<figcaption>Экшн-камеры</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a class="category-link" href="#">
-					<figure class="fitness-bracelets">
-						<figcaption>Фитнес-браслеты</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a class="category-link" href="#">
-					<figure class="smart-watch">
-						<figcaption>Умные часы</figcaption>
-					</figure>
-				</a>
-			</li>
-			<li>
-				<a class="category-link" href="#">
-					<figure class="quadcopters">
-						<figcaption>Квадрокоптеры</figcaption>
-					</figure>
-				</a>
-			</li>
-		</ul>
-
+		</div>
 		<div class="services-wrapper">
 			<section class="services container">
 				<h2 class="visually-hidden">Сервисы</h2>
@@ -188,7 +198,6 @@
 				</ul>
 			</section>
 		</div>
-
 		<ul class="brands-list container">
 			<li>
 				<a href="https://www.dji.com/ru">
@@ -239,9 +248,9 @@
 		<div class="container">
 			<a class="logo-footer">Device</a>
 			<ul class="user-navigation-footer">
-				<li><a class="log-in-footer" href="#">Войти</a></li>
-				<li><a class="compare-footer" href="#">Сравнить</a></li>
-				<li><a class="cart-footer" href="#">Корзина</a></li>
+				<li><a class="button-log-in-footer" href="#">Войти</a></li>
+				<li><a class="button-compare-footer" href="#">Сравнить</a></li>
+				<li><a class="button-cart-footer" href="#">Корзина</a></li>
 			</ul>
 			<address class="address">г. Москва, ул. Строителей, 15</address>
 			<ul class="navigation-footer">
@@ -250,6 +259,7 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 			<p class="phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+			<span class="yellow-line"></span>
 			<ul class="social-footer">
 				<li><a class="social-button social-button-facebook" href="#" target="_blank" aria-label="Фейсбук"></a></li>
 				<li><a class="social-button social-button-instagram" href="#" target="_blank" aria-label="Инстаграмм"></a></li>
